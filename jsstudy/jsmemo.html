@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메모장</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="jsmemo.js"></script>
+    <link rel="stylesheet" href="jsmemo.css">
+</head>
+<body>
+    <div id="searchWrap">
+
+    </div>
+    <div id="listWrap">
+       <ul id="memoList">
+
+       </ul> 
+    </div>
+    <div id="memoWrap">
+        <div id="memoTitleDiv">
+
+        </div>
+        <div id="memoContentDiv">
+
+        </div>
+    </div>
+    <div id="createWrap">
+        <div>제목 <input type="text" id="title"></div>
+        <div>내용 <textarea id="content" rows="10"></textarea></div>
+        <div>
+            <input type="button" id="createBtn" value="등록">&nbsp;
+            <input type="button" id="cancleBtn" value="취소">
+        </div>
+    </div>
+</body>
+</html>
