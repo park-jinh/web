@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  /* 해더 */
+  header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 3px solid #ccc;
+    background-color: #a1fffa;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    line-height: 70px;
+    text-align: center;
+  }
+  
+  /* 메모 등록창 */
+  #createWrap {
+    top: 20%;
+    left: 25%;
+    border: 1px solid black;
+    background-color: #e0f0f5;
+    position: absolute;
+    display: none;
+    z-index: 10;
+  }
+  #createWrap div {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #createWrap > div:nth-child(1) {
+    border: 0px solid blue;
+    height: 30px;
+    font-size: 1.3rem;
+  }
+  #createTitle {
+    width: 200px;
+    height: 30px;
+  }
+  #createWrap > div:nth-child(2) {
+    border: 0px solid red;
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+  #createContent {
+    width: 260px;
+    height: 300px;
+    display: flex;
+  }
+  #createWrap > div:nth-child(3) {
+    border: 0px solid yellow;
+    display: flex;
+    justify-content : space-between;
+    margin-bottom: 10px;
+  }
+  #createWrap > div:nth-child(3) > input {
+    width: 50%;
+    height: 30px;
+    font-size: 1.3rem;
+  }
+  
+  /* 메인프레임 */
+  .mainFrame {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    height: 80%;
+    display: flex;
+  }
+  /* 메모리스트 창 */
+  #listWrap {
+    border-right: 1px solid red;
+    width: 30%;
+    height: 700px;
+    background-color: #fde5e3;
+  }
+  #searchWrap {
+    width: 100%;
+    display: flex;
+  }
+  #searchInput {
+    width: 70%;
+  }
+  #searchButton {
+    width: 30%;
+  }
+  #memoList {
+    margin: 10px;
+    height: 600px;
+    overflow-y: scroll;
+  }
+  #regist {
+    margin: 10px;
+    width: 80%;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+  .memoLi:hover {
+    background-color: powderblue;
+    cursor: pointer;
+  }
+  /* 메모 상세 내용 창 */
+  #memoWrap {
+    border: 1px solid blue;
+    padding: 20px;
+    width: 70%;
+    height: 700px;
+  }
+  #memoWrap .memoContentDiv {
+    margin-top: 20px;
+    width: 100%-40px;
+    height: 580px;
+  }
+  #memoContent {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+  }
+  #memoWrap .memoBtnDiv {
+    width: 100%-40px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: right;
+  }
+  #memoWrap .memoBtnDiv button {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }

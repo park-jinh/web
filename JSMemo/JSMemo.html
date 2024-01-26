@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메모장</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="jsmemo.js"></script>
+    <link rel="stylesheet" href="jsmemo.css">
+</head>
+
+<body>
+    <header>
+        <h1>JSMEMO</h1>
+    </header>
+
+    <div class="mainFrame">
+        <div id="listWrap">
+            <div id="searchWrap">
+                <input type="text" id="searchInput" placeholder="검색어를 입력하세요.">
+                <button id="searchButton">검색</button>
+            </div>
+            <ul id="memoList"></ul>
+            <button id="regist">메모 등록</button>
+        </div>
+        <div id="memoWrap">
+            <h2>Title</h2>
+            <div class="memoContentDiv">
+                <textarea id="memoContent">메모 내용</textarea>
+            </div>
+            <div class="memoBtnDiv">
+                <button id="changeBtn">수정</button>
+                <button id="deleteBtn">삭제</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="createWrap">
+        <div>제목 : <input type="text" id="createTitle"></div>
+        <div>내용 <textarea id="createContent"></textarea></div>
+        <div>
+            <input type="button" id="createBtn" value="등록">&nbsp;
+            <input type="button" id="cancleBtn" value="취소">
+        </div>
+    </div>
+</body>
+
+</html>
